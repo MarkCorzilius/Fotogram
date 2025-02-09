@@ -6,7 +6,7 @@ function getDialogTemplate(dialogIndex) {
   return `<div class="dialogHeader_and_img">
         <div class="dialog_header">
           <div class="img_name">${imageNames[dialogIndex]}</div>
-          <img id="closeDialogButton"
+          <img onmouseover=this.src='./assets/img/closeButtonHovered.png' onmouseout=this.src='./assets/img/closeButton.png' id="closeDialogButton"
             onclick="closeDialog()"
             src="./assets/img/closeButton.png"
             alt="close"
@@ -22,8 +22,8 @@ function getDialogTemplate(dialogIndex) {
         </div>
       </div>
       <div class="dialog_footer">
-        <img class="switchPage_buttons" onclick="switchDialogLeft(${dialogIndex})" src="./assets/icons/leftNotHovered.png" alt="left" />
+        <img onmouseover=this.src='./assets/icons/leftHovered.png' onmouseout=this.src='./assets/icons/leftNotHovered.png' class="switchPage_buttons" onclick="switchDialogLeft(${dialogIndex})" src="./assets/icons/leftNotHovered.png" alt="left" />
         <p>${dialogIndex + 1}/12</p>
-        <img class="switchPage_buttons" onclick="switchDialogRight(${dialogIndex})" src="./assets/icons/rightNotHovered.png" alt="right" />
+        <img onmouseover=this.src='./assets/icons/rightHovered.png' onmouseout=this.src='./assets/icons/rightNotHovered.png' class="switchPage_buttons" onclick="switchDialogRight(${dialogIndex})" src="./assets/icons/rightNotHovered.png" alt="right" />
       </div>`;
 }

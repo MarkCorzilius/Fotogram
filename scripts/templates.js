@@ -1,12 +1,12 @@
-function getImagesHTML(imgIndex) {
-  return `<img onclick="openDialog(${imgIndex})" class="content_imgs" src="./assets/img/${images[imgIndex]}" alt="img${imgIndex}">`;
+function getImagesHTML(dialogIndex) {
+  return `<img onclick="openDialog(${dialogIndex})" class="content_imgs" src="./assets/img/${images[dialogIndex]}" alt="img${dialogIndex}">`;
 }
 
 function getDialogTemplate(dialogIndex) {
   return `<div class="dialogHeader_and_img">
         <div class="dialog_header">
           <div class="img_name">${imageNames[dialogIndex]}</div>
-          <img
+          <img id="closeDialogButton"
             onclick="closeDialog()"
             src="./assets/img/closeButton.png"
             alt="close"
@@ -22,8 +22,8 @@ function getDialogTemplate(dialogIndex) {
         </div>
       </div>
       <div class="dialog_footer">
-        <img src="./assets/icons/leftNotHovered.png" alt="left" />
-        <p>1/12</p>
-        <img src="./assets/icons/rightNotHovered.png" alt="right" />
+        <img onclick="switchDialogLeft(${dialogIndex})" src="./assets/icons/leftNotHovered.png" alt="left" />
+        <p>${dialogIndex + 1}/12</p>
+        <img onclick="switchDialogRight(${dialogIndex})" src="./assets/icons/rightNotHovered.png" alt="right" />
       </div>`;
 }

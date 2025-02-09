@@ -22,8 +22,8 @@ function getDialogTemplate(dialogIndex) {
         </div>
       </div>
       <div class="dialog_footer">
-        <img onclick="switchDialogLeft(${dialogIndex})" src="./assets/icons/leftNotHovered.png" alt="left" />
+        <img class="switchPage_buttons" onclick="switchDialogLeft(${dialogIndex})" src="./assets/icons/leftNotHovered.png" alt="left" />
         <p>${dialogIndex + 1}/12</p>
-        <img onclick="switchDialogRight(${dialogIndex})" src="./assets/icons/rightNotHovered.png" alt="right" />
+        <img class="switchPage_buttons" onclick="switchDialogRight(${dialogIndex})" src="./assets/icons/rightNotHovered.png" alt="right" />
       </div>`;
 }

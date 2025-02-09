@@ -1,0 +1,125 @@
+@media screen and (max-width: 1440px) {
+  /* Styles for larger desktops */
+}
+
+@media screen and (max-width: 1280px) {
+  /* Styles for desktops */
+}
+
+@media screen and (max-width: 1024px) {
+  /* Styles for small laptops */
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for tablets */
+  .content_imgs {
+    height: 120px;
+    width: 120px;
+    margin-top: 16px;
+  }
+  .photos_div {
+    gap: 16px;
+    padding: 8px 24px 24px;
+  }
+  .title {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  #dialog {
+    max-height: 500px;
+    max-width: 350px;
+  }
+  #dialog_img {
+    height: 175px;
+    width: 175px;
+    margin-bottom: 16px;
+  }
+  .dialog_header {
+    margin: 16px 16px 48px;
+  }
+  #img_name {
+    font-size: 16px;
+  }
+  #closeDialogButton {
+    cursor: pointer;
+    height: 32px;
+  }
+  .dialog_footer {
+    gap: 8px;
+    padding-bottom: 16px;
+  }
+  .switchPage_buttons {
+    height: 32px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for small phones */
+  .content_imgs {
+    height: 100px;
+    width: 100px;
+    margin-top: 16px;
+  }
+  .photos_div {
+    gap: 16px;
+    padding: 8px 8px 16px;
+  }
+  .logo_fotogram {
+    height: 24px;
+  }
+  .title {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  #dialog {
+    max-height: 400px;
+    max-width: 250px;
+  }
+  #dialog_img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 16px;
+  }
+  .dialog_header {
+    margin: 16px 16px 40px;
+  }
+  #img_name {
+    font-size: 12px;
+  }
+  #closeDialogButton {
+    cursor: pointer;
+    height: 24px;
+  }
+  .dialog_footer {
+    gap: 8px;
+    padding-bottom: 16px;
+  }
+  .switchPage_buttons {
+    height: 24px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* Styles for very small screens */
+  .content_imgs {
+    height: 100px;
+    width: 100px;
+    margin-top: 16px;
+  }
+  .photos_div {
+    gap: 16px;
+    padding: 8px 8px 16px;
+  }
+  .logo_fotogram {
+    height: 24px;
+  }
+  .title {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}

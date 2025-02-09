@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotogram</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/icons/favicon_fotogram.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+
+    <script src="./script.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/data.js"></script>
+  </head>
+
+  <body onload="renderImages()">
+    <header>
+      <img
+        class="logo_fotogram"
+        src="./assets/img/logo_fotogram.svg"
+        alt="logo"
+      />
+    </header>
+    <content id="content">
+      <div onclick="closeDialog()" id="overlay">
+        <div onclick="event.stopPropagation()" id="dialog"></div>
+      </div>
+      <h2 class="title">Your personal photo album</h2>
+      <div id="photos_div" class="photos_div"></div>
+    </content>
+    <footer>
+      <a target="_blank" href="https://icons8.com/icon/26147/next-page"
+        >Pfeil</a
+      >
+      Icon von <a target="_blank" href="https://icons8.com">Icons8</a>
+    </footer>
+  </body>
+</html>

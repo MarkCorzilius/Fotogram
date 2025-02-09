@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+header {
+  height: 120px;
+  background-color: rgb(7 36 46);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 32px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: rgb(7 36 46);
+}
+content {
+  background-color: rgb(5 23 33);
+  position: relative;
+}
